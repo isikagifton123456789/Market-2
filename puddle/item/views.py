@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required
+from django.contrib.admin.views.decorators import staff_member_required
 from django.db.models import Q
 from django.shortcuts import render, get_object_or_404, redirect
 
@@ -33,7 +34,7 @@ def detail(request, pk):
         'related_items': related_items
     })
 
-@login_required
+@staff_member_required
 def new(request):
     if request.method == 'POST':
         form = NewItemForm(request.POST, request.FILES)
