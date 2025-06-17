@@ -26,7 +26,11 @@ SECRET_KEY = 'django-insecure-5q$!s%d@qv=54*7))zj9lc#s)a=rz5yz&0%9#$9+oceu6pu2qk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'market-2-dosw.onrender.com',  # your Render domain
+    'localhost',
+    '127.0.0.1',
+]
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
