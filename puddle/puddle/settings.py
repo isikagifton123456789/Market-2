@@ -36,6 +36,10 @@ LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://market-2-dosw.onrender.com',
+]
+
 
 # Application definition
 
